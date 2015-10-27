@@ -1,23 +1,27 @@
----
-layout: default
----
-
-<div class="home">
-
-  <h1 class="page-heading">Posts</h1>
-
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
-</div>
+<!DOCTYPE html>    <!-- Denotes html document -->
+<html>             <!-- Starts HTML code -->
+    <head>         <!-- Starts the head section, HTML code you can't see on the browser -->   
+    </head>        <!-- ends head section -->
+    
+    <body>         <!-- Starts the body section, all of the stuff you can see -->
+    	<h1>Did You Say Coffee?</h1>
+    	<img src="http://kanoodle.com/wp-content/uploads/2014/08/not-sure-if-meme-coffee.jpg" />
+    	<h2>Here is a cool map of most of the local coffee shops in the Dallas Area!</h2>
+    	<iframe src="https://www.google.com/maps/d/u/0/embed?mid=zdQVzPsrao5Q.kFWyuuE5OF44" ></iframe>
+    	<form action="MAILTO:jackie@techtalentsouth.com" method="post" enctype="text/plain">
+    		<fieldset>
+    			<legend>Did I miss one you know of?</legend>
+    			Your Name:<br>
+    			<input type="text" name="name">
+    			<br>
+    			Coffee Shop:<br>
+    			<input type="text" name="coffeeshop">
+    			<br>
+    			Their Website: (Social Media is Ok):<br>
+    			<input type="text" name="sitelink">
+    			<br><br>
+    			<input type="submit" value="Submit">
+    		</fieldset>
+    	</form>
+    </body>        <!-- Ends body section -->
+</html>            <!-- ends html code/document -->
